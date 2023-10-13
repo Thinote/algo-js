@@ -28,8 +28,20 @@ let evoli = new Pokemon ("evoli" , 15, 3, 30, 50)
 
 
 while (pickachu.hp > 0 && evoli.hp > 0) {
-    pickachu.attackPokemon(rondoudou)
+  pickachu.attackPokemon(evoli);
+
+  if (evoli.hp <= 0) {
+    console.log("evoli a perdu le combat, il est K.O");
+    break;
+  }
+  evoli.attackPokemon(pickachu);
+
+  if (pickachu.hp <= 0) {
+    console.log("pickachu a perdu le combat, il est K.O");
+    break;
+  }
 }
+console.log("Le combat est terminé");
 
 
 

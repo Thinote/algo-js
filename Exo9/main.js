@@ -27,7 +27,7 @@ let pickachu = new Pokemon ("pickachu" , 10, 5, 30, 75)
 let evoli = new Pokemon ("evoli" , 15, 3, 30, 50)
 
 
-while (this.hp > 0) {
+while (pickachu.hp > 0 && evoli.hp > 0) {
     pickachu.attackPokemon(rondoudou)
 }
 
